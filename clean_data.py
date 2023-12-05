@@ -7,7 +7,9 @@ metadataFilename        = "data/input/unions_full_metadata.csv"
 unionFilename           = "data/output/unions.txt"
 outputFilename          = "data/output/cleanedData.csv"
 farFilename             = "data/output/farData.csv"
-eliminatedFilename  = "data/output/eliminatedData.csv"
+covidFilename           = "data/output/covidData.csv"
+yearFilename            = "data/output/yearData.csv"
+eliminatedFilename      = "data/output/eliminatedData.csv"
 
 leanings = {
         "washingtonpost": ["left",False],
@@ -70,21 +72,27 @@ def getArticleData(articlesFilename):
     metadata    = metadata.drop("title", axis=1)
     data        = pd.merge(data, metadata, on="url")
     # Get relevant columns
-    relevantColumns = ["actual_domain", "title", "body", "created_utc"]
+    relevantColumns = ["actual_domain", "title", "body", "created_utc", "url"]
     data            = data[relevantColumns]
     # Rename columns
     columnNames = {"actual_domain": "domain", "body": "content", "created_utc": "date"}
     data        = data.rename(columns=columnNames)
     # Drop Duplicates
     data = data.drop_duplicates(subset="title", keep='first')
+    # Drop irrelevant dates
+    data["year"] = pd.to_datetime(data["date"], unit="s").dt.year
+    data = data[data["year"] != 2006]
+    data = data[data["year"] != 2007]
+    data = data.drop("year", axis=1)
     return data
 
 def getUnions():
     with open(unionFilename) as fp:
         potential = fp.read().split("\n")
+        not_allowed = ["pass", "cope", "smart"]
         unions = []
         for union in potential:
-            if union != "pass" and union != "cope":
+            if union not in not_allowed:
                 unions.append(union)
     return unions
 
@@ -131,6 +139,7 @@ def filterArticles(data, unions):
     """
     Filter the articles.
     """
+    # Remove those in the wrong years
     m = data.apply(articleMask, axis=1, unions=unions)
     eliminatedData = data[~m]
     keptData = data[m]
@@ -160,6 +169,34 @@ def constructMetadata(data):
     return data
 
 
+def covidFilter(row):
+    tempContent = row.content.lower()
+    tempContent = re.sub("[^a-zA-Z0-9]", " ", tempContent)
+    tempContent = " " + tempContent + " "
+
+    # Clean title
+    tempTitle = row.content.lower()
+    tempTitle = re.sub("[^a-zA-Z0-9]", " ", tempTitle)
+    tempTitle = " " + tempTitle + " "
+
+    covidTerms = ["covid", "covid-19"]
+    for term in covidTerms:
+        if term in tempTitle or term in tempContent:
+            return True
+    return False
+
+
+
+def filterForCOVID(data):
+    # Remove those in the wrong years
+    m = data.apply(covidFilter, axis=1)
+    data = data[m]
+    return data
+
+def filterForYear(data, year):
+    data["year"] = pd.to_datetime(data["date"], unit="s").dt.year
+    data = data[data["year"] == year]
+    return data
 
 def constructData(articlesFilename, outputTest):
     """
@@ -185,11 +222,13 @@ def constructData(articlesFilename, outputTest):
     return data, eliminatedData
 
 
-def consoleReport(data, eliminatedData, farData):
+def consoleReport(data, eliminatedData, farData, covidData, yearData):
     print("Number of documents:", data.shape[0])
     print("Number of domains:", len(data["domain"].unique()))
     print("Number of eliminated documents:", eliminatedData.shape[0])
     print("Number of highly polarized documents:", farData.shape[0])
+    print("Number of highly polarized covid documents:", covidData.shape[0])
+    print("Number of highly polarized 2019 documents:", yearData.shape[0])
 
 
 
@@ -218,8 +257,12 @@ def main(dataSelection, outputTest):
     farData = data[data["far"] != -1]
     farData.to_csv(farFilename, sep=",", encoding="utf-8")
     print("done!")
+    covidData = filterForCOVID(farData)
+    covidData.to_csv(covidFilename, sep=",", encoding="utf-8")
+    yearData = filterForYear(farData, 2019)
+    yearData.to_csv(yearFilename, sep=",", encoding="utf-8")
     print("Summary Report")
-    consoleReport(data, eliminatedData, farData)
+    consoleReport(data, eliminatedData, farData, covidData, yearData)
 
 
 

@@ -2,7 +2,7 @@ library(stm)
 # initialize parameters
 options(encoding = "UTF-8")
 pdf("output/eliminatedMaterial.pdf", 8,10)
-numTopics <- 8
+numTopics <- 12
 numLabels <- 5
 numThoughtExamples <- 2
 numThoughtTitleExamples <- 10
@@ -15,17 +15,24 @@ shortdata$content <- strtrim(shortdata$content, thoughtLength)
 
 fulldata$title <- NULL
 
-# process data
-processed <- textProcessor(fulldata$content, metadata=fulldata)
-out <- prepDocuments(processed$documents, processed$vocab, processed$meta)
-docs <- out$documents
-vocab <- out$vocab
-meta <- out$meta
-
-
-# estimate
-fit <- stm(documents=docs, vocab=vocab, K=numTopics, data=meta, init.type="Spectral", max.em.its=75, seed=238725)
-saveRDS(fit, file="output/eliminatedSTM.rds")
+constructModel <- TRUE
+if (constructModel == TRUE) {
+    # process data
+    processed <- textProcessor(fulldata$content, metadata=fulldata)
+    out <- prepDocuments(processed$documents, processed$vocab, processed$meta)
+    docs <- out$documents
+    vocab <- out$vocab
+    meta <- out$meta
+    
+    # estimate
+    fit <- stm(documents=docs, vocab=vocab, K=numTopics, data=meta, init.type="Spectral", max.em.its=75, seed=238725)
+    data_to_save = list(out=out, stm=fit)
+    saveRDS(data_to_save, "output/eliminatedSTM.rds")
+} else {
+    loaded_data <- readRDS("output/eliminatedSTM.rds")
+    out <- loaded_data$out
+    fit <- loaded_data$stm
+}
 plot(fit, type="summary")
 
 # analyze topics themselves
