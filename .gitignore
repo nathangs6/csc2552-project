@@ -1,9 +1,13 @@
 # Mine
 data/output/*
+!data/output/.gitkeep
 tags
 r/output/*.pdf
+!r/output/.gitkeep
 scrapers/output/*
+!scrapers/output/.gitkeep
 output/*
+!output/.gitkeep
 data/input/articles.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
