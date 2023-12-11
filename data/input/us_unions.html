@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"5d4af6f314",applicationID:"54360456"};;/*! For license information please see nr-loader-rum-1.248.0.min.js.LICENSE.txt */
+(()=>{var e,t,n={234:(e,t,n)=>{"use strict";n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>R,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a);const n=(0,r.ek)(e);n&&(n.info=o[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=n(7056),l=n(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f());const n=(0,r.ek)(e);n&&(n.init=g[e])}function m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b);const n=(0,r.ek)(e);n&&(n.loader_config=y[e])}const _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,k);const n=(0,r.ek)(e);n&&(n.runtime=E[e])}function R(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{"use strict";n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{Array.isArray(e[o])&&Array.isArray(t[o])?n[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{"use strict";n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.248.0",i="PROD",a="CDN"},385:(e,t,n)=>{"use strict";n.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=(a?.document?.readyState,Boolean("hidden"===a?.document?.visibilityState)),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{"use strict";n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{"use strict";n.d(t,{L:()=>d,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};u(e),s[e].get(t)||s[e].set(t,n)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{"use strict";n.d(t,{A:()=>c,ee:()=>u});var r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),u=function e(t,n){var r={},s={},d={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(u.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,r.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,n)=>{"use strict";n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{"use strict";n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{"use strict";n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{"use strict";n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{"use strict";n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{"use strict";n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{"use strict";function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{"use strict";function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2825:(e,t,n)=>{"use strict";n.d(t,{N:()=>d,T:()=>l});var r=n(8325),i=n(5546),a=n(3325),o=n(385);const s="newrelic";const c={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},u=new Set;function d(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,r]=e;c[t]?c[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),l[t]=Boolean(r)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{o._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,n)=>{"use strict";n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{"use strict";n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{"use strict";n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{"use strict";n.d(t,{KB:()=>o,b2:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{"use strict";n.d(t,{EZ:()=>d,ce:()=>a,ek:()=>u,fP:()=>o,gG:()=>l,h5:()=>c,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let n=o();n.initializedAgents??={},t.initializedAt={ms:(0,r.z)(),date:new Date},n.initializedAgents[e]=t}function u(e){let t=o();return t.initializedAgents?.[e]}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{"use strict";n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{"use strict";n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{"use strict";n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{"use strict";n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{"use strict";n.d(t,{W:()=>i});var r=n(8325);class i{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{"use strict";n.d(t,{j:()=>b});var r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),u=n(3960),d=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2825);const v=e=>{const t=e.startsWith("http");e+="/",n.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,_||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const E=(0,i.P_)(e.agentIdentifier),j=[A.beacon,A.errorBeacon];m||(E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,a.p)(f.xS,["API/recordReplay/called"],void 0,r.D.metrics,p),(0,a.p)("recordReplay",[],void 0,r.D.sessionReplay,p)},g.pauseReplay=function(){(0,a.p)(f.xS,["API/pauseReplay/called"],void 0,r.D.metrics,p),(0,a.p)("pauseReplay",[],void 0,r.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(f.xS,["API/createTracer/called"],void 0,r.D.metrics,p),(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=D),m=!0}},1926:(e,t,n)=>{n.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,n)=>{"use strict";n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.248.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.248.0.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),s.integrity=i.sriHashes[o],s.crossOrigin="anonymous"),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",i.sriHashes={75:"sha512-5mWtMwj7hrXT5aUkfvBtjH6FJXsR+zdeMBfc721nzrOx36xa23yTrCB1VVOAQa+zIioAbWPW4m7UsPp7hW1WPw=="},(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,u=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.248.0.PROD"]=self["webpackChunk:NRBA-1.248.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";i(1926);var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The page action feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The js errors feature is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}recordReplay(){(0,e.Z)("Call to agent api recordReplay failed. The agent is not currently initialized.")}pauseReplay(){(0,e.Z)("Call to agent api pauseReplay failed. The agent is not currently initialized.")}}var n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,d.b2)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),T=i(7894),R=i(9251);class S extends f{static featureName=R.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,n),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,T.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,T.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class C extends f{static featureName=I.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(n,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){try{const t=o(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),r.forEach((r=>{if(t[r.featureName]||r.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(r.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,S,C],loaderType:"lite"})})()})();</script>
+<script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"drupalLanguage":"en","drupalCountry":"US","siteName":"AFL-CIO","entityCreated":"1488838826","entityLangcode":"en","entityStatus":"1","entityUid":"3","entityUuid":"45962157-eb93-4939-8360-5ffc4ac5b3da","entityVid":"31293","entityName":"Dennis Loney","entityType":"node","entityBundle":"page","entityId":"49","entityTitle":"Our Affiliated Unions","userUid":0});</script>
+<meta name="description" content="The 59 unions affiliated with the American Federation of Labor and Congress of Industrial Unions." />
+<meta property="og:description" content="The 59 unions affiliated with the American Federation of Labor and Congress of Industrial Unions." />
+<meta property="og:image" content="https://aflcio.org/sites/default/files/2021-03/afl-cio_0.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="AFL-CIO" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="The 59 unions affiliated with the American Federation of Labor and Congress of Industrial Unions." />
+<meta name="twitter:site" content="@aflcio" />
+<meta name="twitter:title" content="Our Affiliated Unions | AFL-CIO" />
+<meta name="twitter:image:alt" content="AFL-CIO" />
+<meta name="twitter:image:height" content="630" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image" content="https://aflcio.org/sites/default/files/2021-03/afl-cio_0.jpg" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/custom/afl/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://aflcio.org/about-us/our-unions-and-allies/our-affiliated-unions" />
+<link rel="shortlink" href="https://aflcio.org/node/49" />
+<link rel="revision" href="https://aflcio.org/about-us/our-unions-and-allies/our-affiliated-unions" />
+<style>.async-hide { opacity: 0 !important}</style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-5NLCHW5':true});</script>
+<script src="/sites/default/files/google_tag/primary/google_tag.script.js?s33ln2" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/afl/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/themes/custom/afl/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/themes/custom/afl/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/themes/custom/afl/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/themes/custom/afl/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-config" content="/themes/custom/afl/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#115e67">
+    <title>Our Affiliated Unions | AFL-CIO</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_oNE0P8ZlWu2DbT4HlL7HHRW1cswQwjfVOW5_1LxR84U.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_qqg1z80-0866NkTQCT7vHnpyDIK1aZ3cUeAz7PvIhW4.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="page-node-type-page">
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NLCHW5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page" class="page layout-container">
+
+	<header class="site-header cf" role="banner">
+
+    <nav class="navbar mobile-navbar sticky-navbar">
+      <!-- MOBILE SEARCH -->
+      <div id="mobile-search" class="collapse">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+            <form action="/search" method="get" accept-charset="UTF-8" id="views-exposed-form-search-search" class="search-form">
+  <div class="input-group">
+    <label for="search-field" class="sr-only">Search</label>
+    <input type="search" class="form-control search-field" placeholder="Search" data-drupal-selector="edit-s" id="edit-s" name="s"/>
+    <span class="input-group-btn">
+      <button class="btn btn-success button js-form-submit form-submit" data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search"  value="Search">
+        <span class="afl-icon afl-icon-search" aria-hidden="true"></span>
+        <span class="sr-only">Search</span>
+      </button>
+    </span>
+  </div>
+</form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE HEADER -->
+      <div class="container-fluid mobile-header">
+        <div class="row">
+          <div class="col-2">
+            <button class="navbar-toggler collapsed pull-left" type="button" data-toggle="collapse" data-target="#mobile-nav" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-bars"></span>
+            </button>
+          </div>
+          <div class="col-8 align-self-center">
+            <div class="text-center nav-brand">
+              	<a href="/" title="AFL-CIO" rel="home">
+		<img class="main-logo" src="/themes/custom/afl/source/images/logo.svg" alt="AFL-CIO" class="img-fluid"/>
+	</a>
+            </div>
+          </div>
+          <div class="col-2">
+            <button class="navbar-toggler collapsed pull-right btn-mobile-search" type="button" data-toggle="collapse" data-target="#mobile-search" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="afl-icon afl-icon-search"></span>
+              <span class="close-search-form">&times;</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mobile-nav" class="container-fluid collapse navbar-collapse font-secondary">
+                  	  
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/what-unions-do" class="nav-link" data-drupal-link-system-path="node/8">What Unions Do</a>
+              </li>
+          <li class="nav-item">
+        <a href="/formaunion" class="nav-link" data-drupal-link-system-path="node/9">Form a Union</a>
+              </li>
+        </ul>
+  
+
+
+
+
+                          	  
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/issues" class="nav-link" data-drupal-link-system-path="node/10">What We Care About</a>
+              </li>
+          <li class="nav-item">
+        <a href="/take-action" class="nav-link" data-drupal-link-system-path="node/11">Take Action</a>
+              </li>
+        </ul>
+  
+
+
+
+
+                <!-- TOP NAV IN MOBILE -->
+        <div class="row top-mobile-nav">
+                      	<div class="nav-leaf nav-leaf-left col-12 col-md-6">
+        
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/about-us" class="nav-link" data-drupal-link-system-path="node/3">About Us</a>
+              </li>
+          <li class="nav-item">
+        <a href="/blog" class="nav-link" data-drupal-link-system-path="node/5">Blog</a>
+              </li>
+          <li class="nav-item">
+        <a href="/press" class="nav-link" data-drupal-link-system-path="node/4">Press</a>
+              </li>
+          <li class="nav-item">
+        <a href="/aflciotv" class="nav-link" data-drupal-link-system-path="node/7">AFLCIO.tv</a>
+              </li>
+          <li class="nav-item">
+        <a href="/union-plus-benefits" class="nav-link" data-drupal-link-system-path="node/6">Union Plus Benefits</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+
+
+                  </div>
+      </div>
+
+              <div id="breadcrumbs" class="hidden-sm-down">
+            <nav role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <ol>
+          <li>
+                  <a href="/">Home</a>
+              </li>
+          <li>
+                  <a href="/about-us">About Us</a>
+              </li>
+          <li>
+                  <a href="/about-us/our-unions-and-allies">Our Unions and Allies</a>
+              </li>
+          <li>
+                  Our Affiliated Unions
+              </li>
+        </ol>
+  </nav>
+
+        </div>
+      
+    </nav>
+
+    <nav class="navbar desktop-navbar">
+      <!-- TOP NAVIGATION -->
+      <div id="top-nav" class="top-nav hidden-md-down">
+        <div class="container">
+          <div class="row">
+                          	<div class="nav-leaf nav-leaf-left col-12 col-md-6">
+        
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/about-us" class="nav-link" data-drupal-link-system-path="node/3">About Us</a>
+              </li>
+          <li class="nav-item">
+        <a href="/blog" class="nav-link" data-drupal-link-system-path="node/5">Blog</a>
+              </li>
+          <li class="nav-item">
+        <a href="/press" class="nav-link" data-drupal-link-system-path="node/4">Press</a>
+              </li>
+          <li class="nav-item">
+        <a href="/aflciotv" class="nav-link" data-drupal-link-system-path="node/7">AFLCIO.tv</a>
+              </li>
+          <li class="nav-item">
+        <a href="/union-plus-benefits" class="nav-link" data-drupal-link-system-path="node/6">Union Plus Benefits</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+
+
+                                  </div>
+        </div>
+      </div>
+      <!--end .nav-->
+      <div class="social-search-nav hidden-md-down">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-8 nav-leaf justify-content-start">
+                          	  
+              <ul class="nav navbar-nav social-follow">
+            														      <li class="list-inline-item facebook">
+        <a href="https://www.facebook.com/aflcio" target="_blank" title="Like us on facebook"><span class="fa fa-facebook"></span></a>
+              </li>
+        														      <li class="list-inline-item twitter">
+        <a href="https://twitter.com/AFLCIO" target="_blank" title="Follow us on Twitter"><span class="fa fa-twitter"></span></a>
+              </li>
+        														      <li class="list-inline-item youtube">
+        <a href="https://www.youtube.com/aflcio?sub_confirmation=1" target="_blank" title="Follow us on YouTube"><span class="fa fa-youtube"></span></a>
+              </li>
+        														      <li class="list-inline-item flickr">
+        <a href="http://www.flickr.com/photos/afl-cio/" target="_blank" title="Follow us on Flickr"><span class="fa fa-flickr"></span></a>
+              </li>
+        </ul>
+  
+
+
+
+
+                        </div>
+            <div class="col-4 nav-leaf justify-content-end">
+              <div class="search-dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="afl-icon afl-icon-search"></span><span class="sr-only">Toggle Search Form</span></a>
+                <div class="dropdown-menu">
+                  <form action="/search" method="get" accept-charset="UTF-8" id="views-exposed-form-search-search" class="search-form">
+  <div class="input-group">
+    <label for="search-field" class="sr-only">Search</label>
+    <input type="search" class="form-control search-field" placeholder="Search" data-drupal-selector="edit-s" id="edit-s" name="s"/>
+    <span class="input-group-btn">
+      <button class="btn btn-success button js-form-submit form-submit" data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search"  value="Search">
+        <span class="afl-icon afl-icon-search" aria-hidden="true"></span>
+        <span class="sr-only">Search</span>
+      </button>
+    </span>
+  </div>
+</form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-nav font-secondary">
+        <!-- MAIN HEADER -->
+        <div id="main-navbar">
+          <div class="container">
+            <!-- MAIN NAV IN MOBILE -->
+            <div class="row">
+              <div class="col-12 col-lg-4 nav-leaf nav-leaf-left align-self-end">
+                              	  
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/what-unions-do" class="nav-link" data-drupal-link-system-path="node/8">What Unions Do</a>
+              </li>
+          <li class="nav-item">
+        <a href="/formaunion" class="nav-link" data-drupal-link-system-path="node/9">Form a Union</a>
+              </li>
+        </ul>
+  
+
+
+
+
+                            </div>
+              <div class="col-12 col-lg-4 nav-leaf text-center hidden-md-down nav-brand align-self-center">
+                	<a href="/" title="AFL-CIO" rel="home">
+		<img class="main-logo" src="/themes/custom/afl/source/images/logo.svg" alt="AFL-CIO" class="img-fluid"/>
+	</a>
+              </div>
+              <div class="col-12 col-lg-4 nav-leaf nav-leaf-right align-self-end">
+                              	  
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/issues" class="nav-link" data-drupal-link-system-path="node/10">What We Care About</a>
+              </li>
+          <li class="nav-item">
+        <a href="/take-action" class="nav-link" data-drupal-link-system-path="node/11">Take Action</a>
+              </li>
+        </ul>
+  
+
+
+
+
+                            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+		
+	</header>
+
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+      	<div data-drupal-messages-fallback class="hidden"></div><div id="block-afl-page-title">
+  
+    
+      
+
+  <header class="article-header container">
+    <div class="row">
+      <div class="content-col">
+                <h1><span property="schema:name">Our Affiliated Unions</span>
+</h1>
+      </div>
+    </div>
+  </header>
+
+
+  </div>
+<div id="block-afl-content">
+  
+    
+      <article role="article" about="/about-us/our-unions-and-allies/our-affiliated-unions" typeof="schema:WebPage" class="section section-page-body">
+    <span property="schema:name" content="Our Affiliated Unions" class="hidden"></span>
+
+  
+
+              <div class="views-element-container col-12" id="block-views-blockaffiliates-list">
+  
+    
+      <div><div  class="affiliate-list view view-affiliates view-display-list js-view-dom-id-ac943fd6f11301331d5625fb43f5b4de4048c3bd2a3f09385862b51fb1cbcaf1 row">
+	<div class="container">
+		<div class="content-col">
+			
+			
+			
+
+			
+			
+			
+
+			  <h3>1514</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.actorsequity.org" target="_blank">Actors&#039; Equity Association (AEA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/ActorsEquity " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/ActorsEquity " target="_blank">Twitter</a></div></div></div>
+  <h3>1515</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.alpa.org" target="_blank">Air Line Pilots Association (ALPA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/WeAreALPA " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/WeAreALPA/ " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/WeAreALPA " target="_blank">YouTube</a></div></div></div>
+  <h3>1516</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.atu.org" target="_blank">Amalgamated Transit Union (ATU)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/ATUInternational " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/ATUComm " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/stpatuorg " target="_blank">YouTube</a></div></div></div>
+  <h3>1518</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.afge.org" target="_blank">American Federation of Government Employees (AFGE)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/afgeunion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/afgenational " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/afgeonline/ " target="_blank">YouTube</a></div></div></div>
+  <h3>1519</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.afm.org" target="_blank">American Federation of Musicians of the United States and Canada (AFM)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/afm.org " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/The_AFM " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/MusiciansUnion " target="_blank">YouTube</a></div></div></div>
+  <h3>1520</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.afsaadmin.org" target="_blank">American Federation of School Administrators (AFSA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/AFSAUnion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/AFSAUnion " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/AFSAUnion " target="_blank">YouTube</a></div></div></div>
+  <h3>1521</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.afscme.org" target="_blank">American Federation of State, County and Municipal Employees (AFSCME)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/AFSCME " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/AFSCME " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/AFSCME " target="_blank">YouTube</a></div></div></div>
+  <h3>1522</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.aft.org" target="_blank">American Federation of Teachers (AFT)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/AFTunion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/aftunion " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/afthq " target="_blank">YouTube</a></div></div></div>
+  <h3>1527</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.musicalartists.org" target="_blank">American Guild of Musical Artists (AGMA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/AmericanGuildofMusicalArtists " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/AGMusicalArtist " target="_blank">Twitter</a></div></div></div>
+  <h3>1523</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.apwu.org" target="_blank">American Postal Workers Union (APWU)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/APWUnational " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/APWUnational " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/apwucommunications " target="_blank">YouTube</a></div></div></div>
+  <h3>1524</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.americanradioassociation.org/" target="_blank">American Radio Association (ARA)</a></div></div></div>
+  <h3>1525</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.atda.org" target="_blank">American Train Dispatchers Association (ATDA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/pages/American-Train-Dispatchers-Association/150262181677598 " target="_blank">Facebook</a></div></div></div>
+  <h3>1526</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content">Associated Actors and Artistes of America (4As)</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.agvausa.com" class="child-affiliate" target="_blank">American Guild of Variety Artists (AGVA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/pages/American-Guild-of-Variety-Artists/171985806179829 " target="_blank">Facebook</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.giaa.us" class="child-affiliate" target="_blank">The Guild of Italian American Actors (GIAA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/guildofitalianamericanactors " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/giaa_union " target="_blank">Twitter</a></div></div></div>
+  <h3>1530</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://bctgm.org" target="_blank">Bakery, Confectionery, Tobacco Workers and Grain Millers International Union (BCTGM)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/BCTGM " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/BCTGM " target="_blank">Twitter</a></div></div></div>
+  <h3>1531</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.brs.org" target="_blank">Brotherhood of Railroad Signalmen (BRS)</a></div></div></div>
+  <h3>1532</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.csea.com" target="_blank">California School Employees Association (CSEA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/pages/California-School-Employees-Association-CSEA/160001002120 " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/csea_now " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/CSEAvideo " target="_blank">YouTube</a></div></div></div>
+  <h3>1533</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.cwa-union.org" target="_blank">Communications Workers of America (CWA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/CWAUnion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/cwaunion " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/CWAUnion " target="_blank">YouTube</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.afacwa.org" class="child-affiliate" target="_blank">Association of Flight Attendants (AFA-CWA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/afacwa " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/afa_cwa " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/myafacwa " target="_blank">YouTube</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.iue-cwa.org" class="child-affiliate" target="_blank">Industrial Union of Electronic Workers (IUE-CWA)</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/IUE_CWAUnion " target="_blank">Twitter</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.nabetcwa.org" class="child-affiliate" target="_blank">National Association of Broadcast Employees and Technicians (NABET-CWA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/groups/19196301434/ " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/NABETCWA " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/NABETCWA " target="_blank">YouTube</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.cwa-ppmws.org/index.cfm" class="child-affiliate" target="_blank">Printing, Publishing and Media Workers, CWA (PPMW-CWA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/PPMWS " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/CWAPrintingSect " target="_blank">Twitter</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://newsguild.org" class="child-affiliate" target="_blank">The Newspaper Guild (TNG-CWA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/NewsGuild/ " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/news_guild " target="_blank">Twitter</a></div></div></div>
+  <h3>1539</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.floc.com/wordpress" target="_blank">Farm Labor Organizing Committee (FLOC)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/FarmLaborOrganizingCommittee " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/SupportFLOC " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/SupportFLOC " target="_blank">YouTube</a></div></div></div>
+  <h3>1540</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.iatse-intl.org/home.html" target="_blank">International Alliance of Theatrical Stage Employees, Moving Picture Technicians, Artists and Allied Crafts of the United States, Its Territories and Canada (IATSE)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/iatse " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/iatse " target="_blank">Twitter</a></div></div></div>
+  <h3>1541</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.ironworkers.org" target="_blank">International Association of Bridge, Structural, Ornamental and Reinforcing Iron Workers (Ironworkers)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/unionironworkers " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/TheIronworkers " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/UnionIronworkers " target="_blank">YouTube</a></div></div></div>
+  <h3>1542</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.iaff.org" target="_blank">International Association of Fire Fighters (IAFF)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/IAFFonline " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/iaffnewsdesk " target="_blank">Twitter</a></div></div></div>
+  <h3>1543</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.insulators.org" target="_blank">International Association of Heat and Frost Insulators and Allied Workers (HFIU)</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/insulatorsunion " target="_blank">Twitter</a></div></div></div>
+  <h3>1544</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.goiam.org" target="_blank">International Association of Machinists and Aerospace Workers (IAM)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/MachinistsUnion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/machinistsunion " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/franticharbor " target="_blank">YouTube</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://nffe.org" class="child-affiliate" target="_blank">National Federation of Federal Employees (NFFE-IAM)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/NFFEUnion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/NFFE_Union " target="_blank">Twitter</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.goiam.org/index.php/tcunion" class="child-affiliate" target="_blank">Transportation Communications International Union/IAM (TCU/IAM)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/TCUnionHQ " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/TCUnionHQ " target="_blank">Twitter</a></div></div></div>
+  <h3>1574</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://smart-union.org/" target="_blank">International Association of Sheet Metal, Air, Rail and Transportation Workers (SMART)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/smartunion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/smartunionworks " target="_blank">Twitter</a></div></div></div>
+  <h3>1547</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.boilermakers.org" target="_blank">International Brotherhood of Boilermakers, Iron Ship Builders, Blacksmiths, Forgers and Helpers (IBB)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/Boilermakers.Union " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/boilermakernews " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/ibbwebguy " target="_blank">YouTube</a></div></div></div>
+  <h3>1548</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.ibew.org" target="_blank">International Brotherhood of Electrical Workers (IBEW)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/IBEWFB " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/IBEW " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/@TheElectricalWorker " target="_blank">YouTube</a></div></div></div>
+  <h3>1550</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.ifpte.org" target="_blank">International Federation of Professional and Technical Engineers (IFPTE)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/IFPTE " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/IFPTE " target="_blank">Twitter</a></div></div></div>
+  <h3>3210</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="https://bridgedeck.org/" target="_blank">International Organization of Masters, Mates &amp; Pilots (MM&amp;P)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/IOMMP " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/mmp_union " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/MastersMatesPilots " target="_blank">YouTube</a></div></div></div>
+  <h3>3093</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content">International Plate Printers, Die Stampers and Engravers Union of North America (Plate Printers and Die Stampers)</div></div></div>
+  <h3>1554</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://iuanpw.org/" target="_blank">International Union of Allied, Novelty and Production Workers (Novelty and Production Workers)</a></div></div></div>
+  <h3>1555</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.bacweb.org" target="_blank">International Union of Bricklayers and Allied Craftworkers (BAC)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/IUBAC " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/IUBAC " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/BACInternational " target="_blank">YouTube</a></div></div></div>
+  <h3>1556</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="https://www.iuec.org" target="_blank">International Union of Elevator Constructors (IUEC)</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/IUEC " target="_blank">Twitter</a></div></div></div>
+  <h3>1557</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.iuoe.org" target="_blank">International Union of Operating Engineers (IUOE)</a></div></div></div>
+  <h3>1558</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.iupat.org" target="_blank">International Union of Painters and Allied Trades of the United States and Canada (IUPAT)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/goiupat " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/goiupat " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/GoIUPAT " target="_blank">YouTube</a></div></div></div>
+  <h3>1559</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.iupa.org" target="_blank">International Union of Police Associations (IUPA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/iupa.fanpage " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/TheIupa " target="_blank">YouTube</a></div></div></div>
+  <h3>1560</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.liuna.org" target="_blank">Laborers&#039; International Union of North America (LIUNA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/LaborersInternationalUnionofNorthAmerica " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/LIUNA " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/liunavideo " target="_blank">YouTube</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.npmhu.org" class="child-affiliate" target="_blank">National Postal Mail Handlers Union (NPMHU)</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/NPMHU1 " target="_blank">YouTube</a></div></div></div>
+  <h3>3237</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="https://www.mlbplayers.com/" target="_blank">Major League Baseball Players Association (MLBPA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/MLBPA/ " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/MLBPA " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/mlbpa " target="_blank">YouTube</a></div></div></div>
+  <h3>3248</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="https://mlsplayers.org/" target="_blank">Major League Soccer Players Association (MLSPA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/MLSPlayers/ " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/mlspa " target="_blank">Twitter</a></div></div></div>
+  <h3>1562</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.mebaunion.org/" target="_blank">Marine Engineers&#039; Beneficial Association (MEBA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/meba1875 " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/mebaunion " target="_blank">Twitter</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.passnational.org" class="child-affiliate" target="_blank">Professional Aviation Safety Specialists (PASS)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/pages/Professional-Aviation-Safety-Specialists-PASS/204453672932833 " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/passnational " target="_blank">Twitter</a></div></div></div>
+  <h3>1565</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.natca.org" target="_blank">National Air Traffic Controllers Association (NATCA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/NATCAfamily " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/natca " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="http://www.natca.org/videos/ " target="_blank">YouTube</a></div></div></div>
+  <h3>1566</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.nalc.org" target="_blank">National Association of Letter Carriers (NALC)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/nalc.national " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/NALC_National " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/ThePostalRecord " target="_blank">YouTube</a></div></div></div>
+  <h3>1567</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.nationalnursesunited.org" target="_blank">National Nurses United (NNU)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/nationalnurses " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/nationalnurses " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/NationalNursesUnited " target="_blank">YouTube</a></div></div></div>
+  <h3>1568</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.nytwa.org" target="_blank">National Taxi Workers Alliance (NTWA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/nytwa " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/nytwa " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/nytwa " target="_blank">YouTube</a></div></div></div>
+  <h3>3218</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="https://www.nwslplayers.com/" target="_blank">National Women&#039;s Soccer League Players Association (NWSLPA)</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/NWSL_Players " target="_blank">Twitter</a></div></div></div>
+  <h3>1564</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="https://www.nflpa.com/" target="_blank">NFL Players Association (NFLPA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/NFLPA " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/NFLPA " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/NFLPLAYERS " target="_blank">YouTube</a></div></div></div>
+  <h3>1569</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.opeiu.org" target="_blank">Office and Professional Employees International Union (OPEIU)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/opeiu " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/OPEIU " target="_blank">Twitter</a></div></div></div>
+  <h3>1570</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.opcmia.org" target="_blank">Operative Plasterers&#039; and Cement Masons&#039; International Association of the United States and Canada (OPCMIA)</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/OPCMIAintl " target="_blank">Twitter</a></div></div></div>
+  <h3>1571</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.sagaftra.org" target="_blank">Screen Actors Guild-American Federation of Television and Radio Artists (SAG-AFTRA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/SAGAFTRA " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/SAGAFTRA " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/SAGAFTRATV " target="_blank">YouTube</a></div></div></div>
+  <h3>1572</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.seafarers.org" target="_blank">Seafarers International Union of North America (SIU)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/pages/Seafarers-International-Union-of-North-America-AFL-CIO/169960893758 " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/SeafarersUnion " target="_blank">Twitter</a></div></div></div>
+  <h3>1575</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.twu.org" target="_blank">Transport Workers Union of America (TWU)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/transportworkersunion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/transportworker " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/transportworker " target="_blank">YouTube</a></div></div></div>
+  <h3>3040</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.unitehere.org/" target="_blank">UNITE HERE (UNITE HERE)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/UniteHere " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/unitehere " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="http://www.unitehere.org/video/ " target="_blank">YouTube</a></div></div></div>
+  <h3>1577</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.ua.org" target="_blank">United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the United States and Canada (UA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/pages/United-Association/103644036958 " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/UAPipeTrades " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/uaweb901 " target="_blank">YouTube</a></div></div></div>
+  <h3>1578</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.uaw.org" target="_blank">United Automobile, Aerospace &amp; Agricultural Implement Workers of America International Union (UAW)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/uaw.union " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/uaw " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/uaw " target="_blank">YouTube</a></div></div></div>
+  <h3>1581</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.ufcw.org" target="_blank">United Food and Commercial Workers International Union (UFCW)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/ufcwinternational " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/ufcw " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/UFCWInternational " target="_blank">YouTube</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://rwdsu.info" class="child-affiliate" target="_blank">Retail, Wholesale and Department Store Union (RWDSU-UFCW)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/RWDSU.UFCW " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/RWDSU " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/RetailUnion " target="_blank">YouTube</a></div></div></div>
+  <h3>1582</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.umwa.org" target="_blank">United Mine Workers of America (UMWA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/UMWAunion " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/MineWorkers " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/c/UMWAunion " target="_blank">YouTube</a></div></div></div>
+  <h3>1583</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.usw.org" target="_blank">United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial &amp; Service Workers International Union (USW)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/steelworkers " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/steelworkers " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/user/Steelworkers " target="_blank">YouTube</a></div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.gmpiu.org/" class="child-affiliate" target="_blank">Glass, Molders, Pottery, Plastics &amp; Allied Workers International Union (GMP-USW)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/pages/The-Glass-Molders-Pottery-Plastics-Allied-Workers-GMP-International-Union/125350800835228 " target="_blank">Facebook</a></div></div></div>
+  <h3>1584</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.unionroofers.com" target="_blank">United Union of Roofers, Waterproofers and Allied Workers (Roofers and Waterproofers)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/unionroofers " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/roofersunion " target="_blank">Twitter</a></div></div></div>
+  <h3>1585</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://uwua.net" target="_blank">Utility Workers Union of America (UWUA)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/theUWUA " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/The_UWUA " target="_blank">Twitter</a></div></div></div>
+  <h3>3247</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="https://wnbpa.com/" target="_blank">Women&#039;s National Basketball Players&#039; Association (WNBPA)</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/thewnbpa " target="_blank">Twitter</a></div></div><div class="views-field views-field-field-affiliate-youtube"><div class="field-content"><a href="https://www.youtube.com/channel/UC8Zk3z5evrWlDHZi5dkbWPA " target="_blank">YouTube</a></div></div></div>
+  <h3>1586</h3>
+    <div class="views-row"><div class="views-field views-field-field-affiliate-name"><div class="field-content"><a href="http://www.wgaeast.org" target="_blank">Writers Guild of America, East (WGAE)</a></div></div><div class="views-field views-field-field-affiliate-facebook"><div class="field-content"><a href="https://www.facebook.com/WGAEast " target="_blank">Facebook</a></div></div><div class="views-field views-field-field-affiliate-twitter"><div class="field-content"><a href="https://twitter.com/WGAEast " target="_blank">Twitter</a></div></div></div>
+
+			
+			
+
+			
+			
+
+			
+			
+		</div>
+	</div>
+</div>
+</div>
+
+  </div>
+
+
+
+  
+
+</article>
+
+  </div>
+
+
+    </div>
+  </main>
+
+
+
+	<!-- Begin Footer -->
+	<footer class="footer site-footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 col-lg-3 push-lg-9">
+
+					<div class="social-follow">
+												  
+              <ul class="nav navbar-nav social-follow">
+            														      <li class="list-inline-item facebook">
+        <a href="https://www.facebook.com/aflcio" target="_blank" title="Like us on facebook"><span class="fa fa-facebook"></span></a>
+              </li>
+        														      <li class="list-inline-item twitter">
+        <a href="https://twitter.com/AFLCIO" target="_blank" title="Follow us on Twitter"><span class="fa fa-twitter"></span></a>
+              </li>
+        														      <li class="list-inline-item youtube">
+        <a href="https://www.youtube.com/aflcio?sub_confirmation=1" target="_blank" title="Follow us on YouTube"><span class="fa fa-youtube"></span></a>
+              </li>
+        														      <li class="list-inline-item flickr">
+        <a href="http://www.flickr.com/photos/afl-cio/" target="_blank" title="Follow us on Flickr"><span class="fa fa-flickr"></span></a>
+              </li>
+        </ul>
+  
+
+
+
+
+										</div>
+
+					<div class="col-12 footer-email-signup">
+												<div class="block-email-signup email-signup-wrapper" id="block-emailsignupblock">
+  
+    
+      <h3>Get Email Updates</h3>
+<form  class="email-signup-form row" data-drupal-selector="email-signup-form" action="/about-us/our-unions-and-allies/our-affiliated-unions" method="post" id="email-signup-form" accept-charset="UTF-8">
+  <input data-drupal-selector="edit-config-wrapper" type="hidden" name="config[wrapper]" value="email-signup-wrapper" class="form-control" />
+<input data-drupal-selector="edit-config-api-endpoint" type="hidden" name="config[api_endpoint]" value="https://actionnetwork.org/api/v2/forms/4420e7f7-7cd2-4ef6-9092-02996b90a417/submissions" class="form-control" />
+<input data-drupal-selector="edit-config-tags" type="hidden" name="config[tags]" value="People - Website Sign Ups" class="form-control" />
+<input data-drupal-selector="edit-config-thank-you" type="hidden" name="config[thank_you]" value="Thanks for signing up for email updates!" class="form-control" />
+
+<div class="js-form-item form-item form-type-email js-form-type-email form-item-email-address js-form-item-email-address form-no-label">
+	<div class="form-group">
+								<input placeholder="Email Address" data-drupal-selector="edit-email-address" type="email" id="edit-email-address" name="email_address" value="" size="60" maxlength="254" class="form-email required form-control" required="required" aria-required="true" />
+
+									</div>
+</div>
+
+<div class="js-form-item form-item form-type-textfield js-form-type-textfield form-item-postal-code js-form-item-postal-code form-no-label">
+	<div class="form-group">
+								<input placeholder="ZIP" data-drupal-selector="edit-postal-code" type="text" id="edit-postal-code" name="postal_code" value="" size="10" maxlength="128" class="form-text form-control" />
+
+									</div>
+</div>
+<input autocomplete="off" data-drupal-selector="form-nhtn9yq5lzqhpxapk-wmh0rdwwwtt-aiuqgrp0xovyc" type="hidden" name="form_build_id" value="form-NHtN9YQ5lzqHpxapk-wmH0rdWwwtT_aIuQgrP0XoVyc" class="form-control" />
+<input data-drupal-selector="edit-email-signup-form" type="hidden" name="form_id" value="email_signup_form" class="form-control" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper col-6" id="edit-actions"><button  data-drupal-selector="an-submit" type="submit" id="an-submit" name="op" value="Sign Up" class="button js-form-submit form-submit btn btn-primary btn-arrow w-100">Sign Up</button>
+</div>
+
+</form>
+<div class="signup-form-message"></div>
+  </div>
+
+
+										</div>
+
+					<div class="row sms-signup">
+						<div class="col-1"><span class="afl-icon afl-icon-lg afl-icon-mobile"></span></div>
+						<div class="col-10">
+						<span class="d-block">Text <strong>WORK</strong> to <strong>235246</strong></span>
+						<small class="d-block">to opt in to mobile messages from the AFL-CIO. Message and data rates apply. Reply STOP to unsubscribe. Reply HELP for help. You will receive periodic messages with updates and news about our work. <a href="/privacy-policy-and-terms-use">Privacy Policy and Terms of Use</a>.</small>
+						</div>
+					</div>
+
+					<a href="/contact" class="btn-boxed btn btn-outline-secondary">Contact Us</a>
+
+				</div>
+
+				<div class="col-12 col-lg-9 pull-lg-3 footer-links">
+					<div class="row">
+						<div class="col-12 col-lg-9 push-lg-3">
+                              	  
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/about-us" class="nav-link" data-drupal-link-system-path="node/3">About Us</a>
+                                <ul class="nav navbar-nav">
+              <li class="nav-item">
+        <a href="/about-us/our-unions-and-allies/our-affiliated-unions" class="nav-link is-active" data-drupal-link-system-path="node/49">Affiliated Unions</a>
+              </li>
+          <li class="nav-item">
+        <a href="/about-us/leadership/statements" class="nav-link" data-drupal-link-system-path="node/87">Executive Council Statements</a>
+              </li>
+          <li class="nav-item">
+        <a href="/about/leadership" class="nav-link">Leadership</a>
+              </li>
+          <li class="nav-item">
+        <a href="/about-us/our-unions-and-allies" class="nav-link" data-drupal-link-system-path="node/13">Our Unions and Allies</a>
+              </li>
+          <li class="nav-item">
+        <a href="/about-us/programs" class="nav-link" data-drupal-link-system-path="node/14">Programs</a>
+              </li>
+          <li class="nav-item">
+        <a href="https://aflcio.org/about-us/afl-cio-values-statement" title="The modern labor movement is open to everyone and strives to leave no worker behind. " class="nav-link">Values Statement</a>
+              </li>
+          <li class="nav-item">
+        <a href="/careers" class="nav-link" data-drupal-link-system-path="node/17">Work with Us</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li class="nav-item">
+        <a href="/blog" class="nav-link" data-drupal-link-system-path="node/5">Blog</a>
+              </li>
+          <li class="nav-item">
+        <a href="/aflciotv" class="nav-link" data-drupal-link-system-path="node/7">AFLCIO.tv</a>
+              </li>
+          <li class="nav-item">
+        <a href="/formaunion" class="nav-link" data-drupal-link-system-path="node/9">Form a Union</a>
+              </li>
+          <li class="nav-item">
+        <a href="/press" class="nav-link" data-drupal-link-system-path="node/4">Press</a>
+                                <ul class="nav navbar-nav">
+              <li class="nav-item">
+        <a href="/speeches" class="nav-link" data-drupal-link-system-path="node/22">Speeches</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li class="nav-item">
+        <a href="/take-action" class="nav-link" data-drupal-link-system-path="node/11">Take Action</a>
+              </li>
+          <li class="nav-item">
+        <a href="/union-plus-benefits" class="nav-link" data-drupal-link-system-path="node/6">Union Plus Benefits</a>
+              </li>
+          <li class="nav-item">
+        <a href="/what-unions-do" class="nav-link" data-drupal-link-system-path="node/8">What Unions Do</a>
+                                <ul class="nav navbar-nav">
+              <li class="nav-item">
+        <a href="/what-unions-do/social-economic-justice/corporate-accountability" class="nav-link" data-drupal-link-system-path="node/3102">Corporate Accountability</a>
+              </li>
+          <li class="nav-item">
+        <a href="/what-unions-do/social-economic-justice" class="nav-link" data-drupal-link-system-path="node/24">Social and Economic Justice Advocacy</a>
+              </li>
+          <li class="nav-item">
+        <a href="https://aflcio.org/strike-map" title="A map showing where workers are on strike across the country." class="nav-link">Strike Map</a>
+              </li>
+          <li class="nav-item">
+        <a href="/what-unions-do/empower-workers" class="nav-link" data-drupal-link-system-path="node/23">Workplace Advocacy</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li class="nav-item">
+        <a href="/issues" class="nav-link" data-drupal-link-system-path="node/10">What We Care About</a>
+                                <ul class="nav navbar-nav">
+              <li class="nav-item">
+        <a href="/issues/wages-and-benefits" class="nav-link">Better Pay and Benefits</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/civil-rights" class="nav-link" data-drupal-link-system-path="taxonomy/term/2111">Civil Rights</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/corporate-greed" class="nav-link" data-drupal-link-system-path="taxonomy/term/2115">Corporate Greed</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/criminal-justice-reform" class="nav-link" data-drupal-link-system-path="taxonomy/term/2085">Criminal Justice Reform</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/gender-equality" class="nav-link" data-drupal-link-system-path="taxonomy/term/2124">Gender Equality</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/global-labor-movement" class="nav-link">Global Worker Rights</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/health-care" class="nav-link" data-drupal-link-system-path="taxonomy/term/2106">Health Care</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/immigration" class="nav-link" data-drupal-link-system-path="taxonomy/term/2206">Immigration</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/infrastructure" class="nav-link" data-drupal-link-system-path="taxonomy/term/2254">Infrastructure</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/labor-law" class="nav-link" data-drupal-link-system-path="taxonomy/term/2099">Labor Law</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/manufacturing" class="nav-link" data-drupal-link-system-path="taxonomy/term/2431">Manufacturing</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/education" class="nav-link">Quality Education</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/right-work" class="nav-link" data-drupal-link-system-path="taxonomy/term/2285">Right to Work</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/sexual-harassment" class="nav-link" data-drupal-link-system-path="taxonomy/term/3172">Sexual Harassment</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/social-security-and-retirement" class="nav-link" data-drupal-link-system-path="taxonomy/term/2123">Social Security and Retirement</a>
+              </li>
+          <li class="nav-item">
+        <a href="https://aflcio.org/issues/tax-and-budget-policy" class="nav-link">Tax and Budget Policy</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/trade" class="nav-link" data-drupal-link-system-path="taxonomy/term/2094">Trade</a>
+              </li>
+          <li class="nav-item">
+        <a href="/issues/workplace-health-and-safety" class="nav-link" data-drupal-link-system-path="taxonomy/term/2190">Workplace Health and Safety</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li class="nav-item">
+        <a href="/what-unions-do/social-economic-justice/advocacy/legislative-alerts" class="nav-link" data-drupal-link-system-path="node/96">Legislative Alerts</a>
+              </li>
+          <li class="nav-item">
+        <a href="/scorecard" class="nav-link" data-drupal-link-system-path="node/4339">Legislative Voting Records</a>
+              </li>
+          <li class="nav-item">
+        <a href="/reports" class="nav-link" data-drupal-link-system-path="node/223">Reports</a>
+              </li>
+        </ul>
+  
+
+
+
+
+              						</div>
+						<div class="col-4 col-lg-3 pull-lg-9">
+							<a href="/"><img src="/themes/custom/afl/source/images/seal.svg" class="aflcio-seal" alt="AFL-CIO Seal"/></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-9 push-lg-3">
+							<p class="copyright">&copy; 2023 AFL-CIO. All rights reserved.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-9 push-lg-3">
+																  
+              <ul class="nav navbar-nav">
+      
+              <li class="nav-item">
+        <a href="/privacy-policy-and-terms-use" class="nav-link" data-drupal-link-system-path="node/216">Privacy Policy &amp; Terms of Use</a>
+              </li>
+        </ul>
+  
+
+
+
+
+													</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+</div>
+
+<div class="modal fade media-modal" id="media-modal" tabindex="-1" role="dialog" aria-labelledby="Media" aria-hidden="true">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-dialog modal-lg container" role="media">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-12 offset-0 col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-12 col-md-9">
+              <h5></h5>
+              <div class="h1"></div>
+            </div>
+            <div class="col-12 col-md-3 align-self-end text-md-right">
+              
+
+<div class="social-share">
+  <ul class="list-inline social-share-list">
+    <li class="list-inline-item">
+      <a target="_blank" class="facebook-share" href="https://www.facebook.com/sharer.php?u=#">
+        <span class="fa fa-facebook"></span>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a target="_blank" class="twitter-share" href="https://twitter.com/intent/tweet?url=#&text=">
+        <span class="fa fa-twitter"></span>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="email-share" href="/cdn-cgi/l/email-protection#4a756c393f28202f293e776c28252e337769">
+        <span class="fa fa-envelope"></span>
+      </a>
+    </li>
+  </ul>
+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="media-fluid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/49","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"afl\/bootstrap,afl\/global-styling,afl_an\/osdi_command,afl_site\/kiosk-mode,core\/drupal.dialog.ajax,core\/html5shiv,core\/jquery.form,datalayer\/ajax,datalayer\/behaviors,fac\/fac.fac,fac\/fac.fac_plugin,fac\/fac.markjs_cdn,paragraphs\/drupal.paragraphs.unpublished,system\/base,views\/views.module","theme":"afl","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/email-signup\/signup":true},"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":0}}},"fac":{"paywatch":{"id":"paywatch","jsonFilesPath":"\/sites\/default\/files\/fac-json\/paywatch\/en\/ZRrWHbim8CHBapx0jBV14EEZ6mv4JsD5evXM41zOfpI\/","inputSelectors":"input.paywatch-search-box","keyMinLength":1,"keyMaxLength":5,"breakpoint":0,"emptyResult":"","allResultsLink":false,"allResultsLinkThreshold":0,"highlightingEnabled":true,"resultLocation":".paywatch-search-results"}},"ajax":{"an-submit":{"url":"\/email-signup\/signup","event":"mousedown","keypress":true,"prevent":"click","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Sign Up"}}},"user":{"uid":0,"permissionsHash":"9bb6040ce554519c4951a87005d4178fda0300b5ce6a455c38afc0c83104eb9c"}}</script>
+<script src="/sites/default/files/js/js_LWOIKpGkzH8JMYbQgEZLi-2elHBQT7_pyodIwJbofzc.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+<script src="/sites/default/files/js/js_6Os8POzqQiiPvv8OXGa0nWEUe4o_9vCkJ29cZFlqCow.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5d4af6f314","applicationID":"54360456","transactionName":"MlABYhRZXRBWVEEKVgsaIlUSUVwNGEdUBFw6VgJVDl0=","queueTime":0,"applicationTime":17,"atts":"HhcCFFxDTh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

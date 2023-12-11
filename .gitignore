@@ -1,7 +1,10 @@
 # Mine
-data/*
+data/output/*
 tags
 r/output/*.pdf
+scrapers/output/*
+output/*
+data/input/articles.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
