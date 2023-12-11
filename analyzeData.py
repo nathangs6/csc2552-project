@@ -3,7 +3,6 @@ import pandas as pd
 from datetime import datetime
 from matplotlib import cm
 import numpy as np
-from textblob import TextBlob
 
 outputFolder = "output/"
 axesColour = 'darkslategrey'

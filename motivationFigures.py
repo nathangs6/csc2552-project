@@ -16,7 +16,6 @@ def unionParticipation():
     data = pd.read_csv("data/input/union_participation.csv")
     data = data[data["Country"].isin(["OECD - Total", "Canada", "United States"])]
     dataPivot = data.pivot(index="Time", columns="Country", values="Value")
-    print(lineColours[:3])
     ax = dataPivot.plot(kind="line", xlabel="Year", ylabel="% Union Participation", title="Union Participation vs. Year", color=lineColours[:3], alpha=alpha)
     ax.spines[:].set_color(axesColour)
     ax.spines[['right', 'top']].set_visible(False)
